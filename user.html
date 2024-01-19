@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/styles/style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <title>User Name</title>
+</head>
+<body>
+    <div  id="preLoader" class="bigloader"></div>
+    <div class="userBox">
+        <div class="exit"><i class="uil uil-sign-out-alt"></i></div>
+        <div style="margin-top: 1rem;" class="userInfo">
+            <div style="margin-right: 0.5rem;" class="UserAvtar">
+                <img id="UserAvtar" style="border-radius: 50%;" height="200px" width="200px" src="./public/img/90506845-e8420580-e122-11ea-82ca-31087fc8486c.png" alt="avtar">
+            </div>
+            <div class="userName">
+                <h2 class="ownerName">Utkarsh</h2>
+                <span class="bio"></span>
+                <span class="location"><i class="uil uil-location-point"></i> Naini</span>
+                <span class="Twitter">Twitter : Utkarsh</span>
+            </div>
+        </div>
+        <div class="extraDetails">
+            <a target="_blank " style="text-decoration:  none; font-size: 1rem;" href="#" class="url"> <i class="uil uil-link-alt"></i> dsjfksldjflkdsjflj sdlk;s</a>
+        </div>
+        <hr>
+        <div class="searchBar">
+            <input  id="search" type="text">
+            <button id="searchBtn"> <i class="uil uil-search-alt"></i></button>
+        </div>
+        <div  id="loader" class="bigloader"></div>
+        <div id="box-container">
+            
+   
+     
+
+    </div>
+    <ul class="pagination" id="pagination">
+        <button onclick="pre()" class="pagination-item pre"><i class="uil uil-arrow-left"></i></button>
+        <span class="pageNumber"></span>
+        <button aria-disabled="true" onclick="next()" class="pagination-item next"><i class="uil uil-arrow-right"></i></button>
+    </ul>
+    </div>
+</body>
+<script src="./fetch.js"></script>
+</html>

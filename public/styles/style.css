@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0 ;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    width: 100%;
+    position: relative;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container > .box {
+    width: 350px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid rgba(49, 33, 33,0.3) ;
+    border-radius: 8px;
+
+}
+.container >  .box > .avtar {
+    margin: 1rem auto;
+
+}
+.container >  .box > .avtar > img {
+    width: 150px;
+    height: 150px;
+}
+.container >  .box > .username {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.2rem;
+    align-items: center;
+    font-weight: 500;
+    color : rgba(0, 0, 0, 0.797)
+}
+.container > .box > .username > input {
+    border-radius: 4px;
+    height: 40px;
+    text-align: center;
+    width: 250px;
+    border: 2px solid rgba(255 , 51 ,102, 0.4);
+}
+.container > .box > .username > input:focus{
+    outline: none;
+    border: 2px solid rgba(255 , 51 ,102, 1);
+}
+.container > .box > .btn > button  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    width: 100px;
+    height: 40px;
+    border-radius: 2px;
+    background-color: rgba(255 , 51 ,102, 1);
+    color: white;
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.container > .box > .btn > button:hover {
+    background-color: rgba(255 , 51 ,102, 0.6);
+}
+ /* Loader  */
+.Smallloader {
+    border: 2px solid rgb(252 173 193);
+    border-radius: 50%;
+    border-top: 2px solid #ffffff;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+
+  .bigloader {
+    top: 50%;
+    display: none;
+    left: 45%;
+    z-index: 999;
+    transform: translate(-50%, -50%);
+    border: 2px solid rgb(252 173 193);
+    border-radius: 50%;
+    border-top: 2px solid #ffffff;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+    width: 150px;
+    height: 150px;
+  }
+
+  .hidden {
+    display:  block!important
+  ;
+  }
+  
+  .userBox{
+    width: 100%;
+    min-height: 100vh;
+    padding:  0 3rem;
+  }
+  .userBox > .userInfo {
+    width: 100%;
+    padding: 1rem 2rem;
+    height:max-content;
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap ;
+    align-items: center;
+
+  }
+  .userBox > .userInfo > .userName{
+    display: flex;
+    justify-content:center;
+    gap: 0.5rem;
+    flex-direction: column;
+    align-items: start;
+  }
+  .userBox > .userInfo > .userName > h2 {
+    color: rgba(255 , 51 ,102, 1);
+  }
+  .userBox > .userInfo > .userName > .location {
+    color: rgba(255 , 51 ,102, 1);
+  }
+
+  .userBox > .extraDetails {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 1rem;
+  }
+
+  .userBox >.searchBar {
+    max-width: 400px;
+    position: relative;
+    height: 40px;
+    border: 1px solid rgba(255 , 51 ,102, 0.4);
+    margin: 2rem auto;
+    border-radius: 2rem;
+  }
+
+  .userBox >  .searchBar > input {
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    border: 1px solid rgba(255 , 51 ,102, 0.4);
+    color: rgba(255 , 51 ,102, 1);
+    padding:  0 2rem;
+  }
+  
+  .userBox > .searchBar > button {
+    position: absolute;
+    right: 8px;
+    text-transform: uppercase;
+    width: 30px;
+    height: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    cursor: pointer;
+    background-color: rgba(255 , 51 ,102, 1);
+    color: white;
+    border-radius: 50%;
+  } 
+   .userBox >  .searchBar > button:hover{
+    background-color: rgba(255 , 51 ,102, 0.7);
+  }
+  .userBox > .searchBar > input:focus {
+    outline: none;
+    border: 2px solid rgba(255 , 51 ,102, 1);
+  }
+
+
+   .userBox > #box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   }
+  .userBox >  #box-container > .boxes {
+    border: 1px solid gray;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    padding:0.5rem;
+    min-height: 10rem;
+    width: 30rem;
+    border-radius: 8px;
+  }
+  .userBox >  #box-container > .boxes  > .boxes-content > h2 {
+    color: rgba(255 , 51 ,102, 1);
+    margin: 0.25rem;
+  }.userBox >  #box-container > .boxes > .topics {
+    display: flex;  
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 1rem;
+  }
+  .userBox >  #box-container > .boxes > .topics > .top1 {
+       width: fit-content;
+       height: fit-content;
+       padding: 0.5rem;
+       border-radius: 3px;
+       background-color: rgba(255 , 51 ,102, 1);
+       color: white;
+  }
+  .userBox > .exit {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: rgba(255 , 51 ,102, 1);
+    color: white;
+    padding: 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .userBox > .exit:hover {
+    background-color: rgba(255 , 51 ,102, 0.7);
+  }
+
+  .pagination {
+    display: flex;
+    width: 237px;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0.2rem;
+    align-items: center;
+    margin: 2rem auto;
+    height: 50px;
+  }
+
+  .pagination > .pagination-item {
+    margin: 0 5px;
+    padding: 8px 12px;
+    background-color: rgba(255 , 51 ,102, 1);
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    border: none;
+
+  }
+ 
+
+  .pagination-item:hover {
+    background-color:rgba(255 , 51 ,102, 0.7);
+  }
